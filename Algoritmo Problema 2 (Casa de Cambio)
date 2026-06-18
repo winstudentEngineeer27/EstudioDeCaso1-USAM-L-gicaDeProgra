@@ -1,0 +1,51 @@
+INICIO 
+
+BIENVENIDA AL SISTEMA Y INTRODUCCION DE LAS VARIABLES A USAR
+
+1- Mostar "Bienvenido al sistema de conversion de Monedas"
+2- Mostar "Ingrese el valor del Dolar del dia de hoy a colones"
+3- Guardar en variable "valorDolar"
+4- Mostar "Ingrese el valor del Euro del dia de hoy a colones"
+5- Guardar en variable "valorEuro"
+6- mostrar "Ingrese cuantas conversiones desea realizar, debe de ser un valor númerico"
+7- Guardar en variable "contadorConverisiones"
+
+INGRESO A LAS CONVERSIONES MEDIANTE UN BUCLE FOR Y A TRAVES DE UN MENÚ MEDIANTE UNA ESTRUCTURA DE DECISIÓN
+
+8- Crear Variable Contador = 0
+9- Mostrar "Ingrese el número del tipo de conversión que desea realizar: 1.COL-USD / 2.COL-EUR / 3.USD-COL / 4.EUR-COL y guardar en variable "conversionParaRealizar""
+
+10- Si conversionParaRealizar == 1, entonces, Mostrar "Ingrese la cantidad de colones a convertir a Dolares"
+11- Guardar la cantidad de colones a convertir en variable "colonesDolares"
+12- Realizar cálculo de colones a Dolares y guardar en variable cambioColDol: colonesDolares * valorDolar = cambioColDol
+13- Mostrar "El valor del Dolar el dia de hoy es de $valorDolar"
+14- Mostrar "La cantidad de colones a cambiar fue de $colonesDolares"
+15- Mostrar "El monto en dolares de la conversion seria de $cambioColDol"
+
+16- Si conversionParaRealizar == 2, entonces mostrar "Ingrese la cantidad de Dolares a cambiar a colones"
+17- Guardar la cantidad de dolares a convertir en variable "dolaresColones"
+18- Realizar Calculo de dolares a colones y guardar en variable cambioDolCol: dolaresColones / valorDolar = cambioDolCol
+19- Mostrar "El valor del Dolar el dia de hoy es de $valorDolar"
+14- Mostrar "La cantidad de Dolares a cambiar fue de $dolaresColones"
+15- Mostrar "El monto en dolares de la conversion seria de $cambioDolCol"
+
+16- Si conversionParaRealizar == 3, entonces, Mostrar "Ingrese la cantidad de colones a convertir Euros"
+17- Guardar la cantidad de colones a convertir en variable "colonesEuros"
+18- Realizar cálculo de colones a Dolares y guardar en variable cambioColEur: colonesEuros * valorEuro = cambioColEur
+19- Mostrar "El valor del Dolar el dia de hoy es de $valorEuro"
+20- Mostrar "La cantidad de colones a cambiar fue de $colonesEuros"
+21- Mostrar "El monto en dolares de la conversion seria de $cambioColEur"
+
+22- Si conversionParaRealizar == 4, entonces mostrar "Ingrese la cantidad de Euros a cambiar a colones"
+23- Guardar la cantidad de dolares a convertir en variable "eurosColones"
+24- Realizar Calculo de dolares a colones y guardar en variable cambioEurCol: eurosColones / valorEuro = cambioEurCol
+25- Mostrar "El valor del Dolar el dia de hoy es de $valorEuro"
+26- Mostrar "La cantidad de Dolares a cambiar fue de $eurosColones"
+27- Mostrar "El monto en dolares de la conversion seria de $cambioEurCol"
+
+28- Si, contador == contadorConversiones, entonces, Finalizar programa con mensaje "Gracias por usar sistema de tipo de cambio de la casa"
+	sino, entonces regresar al paso 7
+
+29- Finalizar Programa
+
+FIN
