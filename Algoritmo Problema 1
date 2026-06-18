@@ -1,0 +1,109 @@
+INICIO
+
+VARIABLES A GUARDAR EL SISTEMA
+1- se guardaran las siguientes variables en el sistema, las cuales se usaran para realizar los calculos de la factura
+	cart101 = 0.20
+	cat205 = 0.35
+	cat105 = 0.10
+	cat301 = 0.50
+	precioBisuteria = 6240
+	precioCalzado = 25535
+	precioLenceria = 15750
+	precioAbrigos = 18880
+	ivaInc = 0.13
+	productoElegido = "Sin Producto"
+
+BIENVENIDA AL SISTEMA E INGRESO DE DATOS DEL CLIENTE
+2- Mostrar "Bienvenido al sistema de Facturacion de Tienda Vintage"
+3- Mostrar "Ingrese el Nombre del cliente a facturar"
+4- Guardar Nombre del cliente en variable "nombreCliente"
+5- Mostrar "Ingrese el numero de telefono del cliente"
+6- Guardar Numero de telefono del cliente en variable "telefonoCliente"
+
+INGRESO AL MENU DE FACTURACION MEDIANTE UN BUCLE y seleccion mediante estructura de decision
+
+Proceso_MenuFacturacion
+
+7- Mostar "Cual de las siguientes categorias es su producto 1. Bisuteria / 2.Calzado / 3.Lenceria / 4.abrigos"
+8- Si usuario selecciona 1, entonces, actualizar vairable: "productoElegido = "Bisuteria""
+9- preguntar por la cantidad que desea llevar de ese producto y guardar en variable "cantProducto"
+10- realizar calculo: precioBisuteria * cantProducto y guardar en variable "factSinDescuento"
+11- realizar calculo del descuento: factSinDescuento * cat101 y guardar en variable "descuentoParaAplicar"
+12- realizar calculo del precio con descuento: factSinDescuento - decuentoParaAplicar y guaradar en variable "factSinImpuesto"
+13- realizar calculo del IVA:  factSinImpuesto * ivaInc y guardar en variable "ivaFactInc"
+14- realizar calculo del monto total a pagar: factSinImpuesto + ivaFactInc y guardar en variable "precioFinal"
+15- Mostar "Cual de las siguientes categorias es su producto 1. Bisuteria / 2.Calzado / 3.Lenceria / 4.abrigos"
+
+15- Si usuario selecciona 2, entonces, actualizar vairable: "productoElegido = "Calzado""
+16- preguntar por la cantidad que desea llevar de ese producto y guardar en variable "cantProducto"
+17- realizar calculo: precioCalzado * cantProducto y guardar en variable "factSinDescuento"
+18- realizar calculo del descuento: factSinDescuento * cat205 y guardar en variable "descuentoParaAplicar"
+19- realizar calculo del precio con descuento: factSinDescuento - decuentoParaAplicar y guaradar en variable "factSinImpuesto"
+20- realizar calculo del IVA:  factSinImpuesto * ivaInc y guardar en variable "ivaFactInc"
+21- realizar calculo del monto total a pagar: factSinImpuesto + ivaFactInc y guardar en variable "precioFinal"
+
+22- Si usuario selecciona 3, entonces, actualizar vairable: "productoElegido = "Lenceria""
+23- preguntar por la cantidad que desea llevar de ese producto y guardar en variable "cantProducto"
+24- realizar calculo: precioLenceria * cantProducto y guardar en variable "factSinDescuento"
+25- realizar calculo del descuento: factSinDescuento * cat105 y guardar en variable "descuentoParaAplicar"
+26- realizar calculo del precio con descuento: factSinDescuento - decuentoParaAplicar y guaradar en variable "factSinImpuesto"
+27- realizar calculo del IVA:  factSinImpuesto * ivaInc y guardar en variable "ivaFactInc"
+28- realizar calculo del monto total a pagar: factSinImpuesto + ivaFactInc y guardar en variable "precioFinal"
+
+29- Si usuario selecciona 4, entonces, actualizar vairable: "productoElegido = "Abrigos""
+30- preguntar por la cantidad que desea llevar de ese producto y guardar en variable "cantProducto"
+31- realizar calculo del descuento: factSinDescuento * cat301 y guardar en variable "descuentoParaAplicar"
+32- realizar calculo del precio con descuento: factSinDescuento - decuentoParaAplicar y guaradar en variable "factSinImpuesto"
+33- realizar calculo: precioAbrigo * cantProducto y guardar en variable "factSinDescuento"
+34- realizar calculo del IVA:  factSinImpuesto * ivaInc y guardar en variable "ivaFactInc"
+35- realizar calculo del monto total a pagar: factSinImpuesto + ivaFactInc y guardar en variable "precioFinal"
+
+MOSTRAR LO DETALLES DE LA FACTURA
+
+36- Mostrar "El producto seleccionado pertenece es $productoElegigo"
+37- Si, productoElegido == "Bisuteria", entonces, 
+	mostrar "El producto seleccionado es $poductoElegido"
+	mostrar "El precio Unitario del producto es $precioBisuteria"
+	mostrar "La cantidad elegida del producto a llevar es de $cantProdcto"
+	mostrar "El precioUnitario del producto es de $precioBisuteria"
+	mostrar "El monto total de la compra es de $factSinDescuento"
+	mostrar "El descuento aplicado a la compra es de 20%, para un monto total de descuento de $descuentoParaAplicar"
+	mostrar "El monto total con descuento es de $factSinImpuesto"
+	mostrar "El impuesto aplicado al producto pertenece a un 13%, para un total de $ivaFactInc de impuestos"
+	Mostrar "El precio total de su compra es de $precioFinal colones"
+	38- Si, productoElegido == "Calzado", entonces, 
+	mostrar "El producto seleccionado es $poductoElegido"
+	mostrar "El precio Unitario del producto es $precioCalzado"
+	mostrar "La cantidad elegida del producto a llevar es de $cantProdcto"
+	mostrar "El precioUnitario del producto es de $precioCalzado"
+	mostrar "El monto total de la compra es de $factSinDescuento"
+	mostrar "El descuento aplicado a la compra es de 35%, para un monto total de descuento de $descuentoParaAplicar"
+	mostrar "El monto total con descuento es de $factSinImpuesto"
+	mostrar "El impuesto aplicado al producto pertenece a un 13%, para un total de $ivaFactInc de impuestos"
+	Mostrar "El precio total de su compra es de $precioFinal colones"
+39- Si, productoElegido == "Lencería", entonces, 
+	mostrar "El producto seleccionado es $poductoElegido"
+	mostrar "El precio Unitario del producto es $precioLenceria"
+	mostrar "La cantidad elegida del producto a llevar es de $cantProdcto"
+	mostrar "El precioUnitario del producto es de $precioLenceria"
+	mostrar "El monto total de la compra es de $factSinDescuento"
+	mostrar "El descuento aplicado a la compra es de 10%, para un monto total de descuento de $descuentoParaAplicar"
+	mostrar "El monto total con descuento es de $factSinImpuesto"
+	mostrar "El impuesto aplicado al producto pertenece a un 13%, para un total de $ivaFactInc de impuestos"
+	Mostrar "El precio total de su compra es de $precioFinal colones
+40- Si, productoElegido == "Abrigos", entonces, mostrar "El precio unitario del producto es $precioAbrigo"
+	mostrar "El producto seleccionado es $poductoElegido"
+	mostrar "El precio Unitario del producto es $precioAbrigos"
+	mostrar "La cantidad elegida del producto a llevar es de $cantProdcto"
+	mostrar "El precioUnitario del producto es de $precioLenceria"
+	mostrar "El monto total de la compra es de $factSinDescuento"
+	mostrar "El descuento aplicado a la compra es de 50%, para un monto total de descuento de $descuentoParaAplicar"
+	mostrar "El monto total con descuento es de $factSinImpuesto"
+	mostrar "El impuesto aplicado al producto pertenece a un 13%, para un total de $ivaFactInc de impuestos"
+	Mostrar "El precio total de su compra es de $precioFinal colones
+41- Mostrar "Desea realizar otra compra? Si desea realziar otra compra digite "Sí", de lo contrario Dígite "No""
+42- Si cliente contesta "Sí", entonces, volver al paso 7.
+	Sino Mostrar "Gracias por comprar en tiendas Vintage"
+43- Cerrar programa.
+
+FIN
