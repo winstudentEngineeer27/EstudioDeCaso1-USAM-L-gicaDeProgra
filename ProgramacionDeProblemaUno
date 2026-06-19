@@ -1,0 +1,101 @@
+#En este primer bloque de codigo se sentencian las variables que se usaran en el programa 
+
+cat101 = 0.20
+cat205 = 0.35
+cat105 = 0.10
+cat301 = 0.50
+precioBisuteria = 6240
+precioCalzado = 25535
+precioLenceria = 15750
+precioAbrigos = 18880
+ivaInc = 0.13
+productoElegido = "Sin Producto"
+
+#EN esta parte pedimos datos relevantes del cliente par al aparte de la facturacion
+
+print("Bienvenido al sistema de facturacion de tieendas vintage")
+nombreCliente = input("Ingrese el nombre del cliente a continuacion: ")
+telefonoCliente = int(input("Ingrese el numero de telefono del cliente: " ))
+
+#Aqui ingresamos a un bucle para todo el tema de la facturacion
+
+while True:
+    
+    #Aqui defino una variable por la cual se va a poder entrar al menu de facturacion del producto
+    
+    seleccion = int(input("Cual de las siguientes categorias es su producto 1. Bisuteria / 2.Calzado / 3.Lenceria / 4.abrigos: "))
+    
+    #Aqui ingreso a Menu segun la vaiable que se definio con anterioridad
+    
+    if seleccion == 1:
+        productoElegido = "Bisuteria"
+        cantProducto = int(input("Cuanta es la cantida de ese producto que desea llevar?: "))
+        factSinDescuento = precioBisuteria * cantProducto
+        descuentoParaAplicar = factSinDescuento * cat101
+        factSinImpuesto = factSinDescuento - descuentoParaAplicar
+        ivaFactInc = factSinImpuesto * ivaInc
+        precioFinal =  factSinImpuesto + ivaFactInc
+    elif seleccion == 2:
+        productoElegido = "Calzado"
+        cantProducto = int(input("Cuanta es la cantidad de ese producto que desea llevar?: "))
+        factSinDescuento = precioCalzado * cantProducto
+        descuentoParaAplicar = factSinDescuento * cat205 
+        factSinImpuesto = factSinDescuento - descuentoParaAplicar
+        ivaFactInc = factSinImpuesto * ivaInc 
+        precioFinal = factSinImpuesto + ivaFactInc
+    elif seleccion == 3 :
+        productoElegido = "Lenceria"
+        cantProducto = int(input("Cuanta es la cantidad de ese producto que desea llevar?: "))
+        factSinDescuento = precioLenceria * cantProducto
+        descuentoParaAplicar = factSinDescuento * cat205 
+        factSinImpuesto = factSinDescuento - descuentoParaAplicar
+        ivaFactInc = factSinImpuesto * ivaInc 
+        precioFinal = factSinImpuesto + ivaFactInc
+    elif seleccion == 4 :
+        productoElegido = "Abrigos"
+        cantProducto = int(input("Cuanta es la cantidad de ese producto que desea llevar?: "))
+        factSinDescuento = precioAbrigos * cantProducto
+        descuentoParaAplicar = factSinDescuento * cat305 
+        factSinImpuesto = factSinDescuento - descuentoParaAplicar
+        ivaFactInc = factSinImpuesto * ivaInc 
+        precioFinal = factSinImpuesto + ivaFactInc
+        
+#Aqui entramos a la parte de facturacion
+
+    print("El producto elegido para facrtura es el siguiente:", productoElegido)
+    print("El nombre del cliente es ", nombreCliente)
+    print("El numero de telefono del cliente es ", telefonoCliente)
+    
+    if productoElegido == "Bisuteria":
+        print("El precio Unitario del producto es ", precioBisuteria)
+        print("El monto total de la compra es de ", factSinDescuento)
+        print("El descuento aplicado a la compra es de 20%, para un monto total de descuento de ", descuentoParaAplicar)
+        print("El monto total con descuento es de ", factSinImpuesto)
+        print("El impuesto aplicado al producto pertenece a un 13%, para un total de", ivaFactInc, "de impuestos")
+        print("El precio total de su compra es de", precioFinal, "colones")
+    elif productoElegido == "Calzado":
+        print("El precio Unitario del producto es ", precioCalzado)
+        print("El monto total de la compra es de ", factSinDescuento)
+        print("El descuento aplicado a la compra es de 35%, para un monto total de descuento de ", descuentoParaAplicar)
+        print("El monto total con descuento es de ", factSinImpuesto)
+        print("El impuesto aplicado al producto pertenece a un 13%, para un total de", ivaFactInc, "de impuestos")
+        print("El precio total de su compra es de", precioFinal, "colones")
+    elif productoElegido == "Lenceria":
+        print("El precio Unitario del producto es ", precioLenceria)
+        print("El monto total de la compra es de ", factSinDescuento)
+        print("El descuento aplicado a la compra es de 10%, para un monto total de descuento de ", descuentoParaAplicar)
+        print("El monto total con descuento es de ", factSinImpuesto)
+        print("El impuesto aplicado al producto pertenece a un 13%, para un total de", ivaFactInc, "de impuestos")
+        print("El precio total de su compra es de", precioFinal, "colones")
+    elif productoElegido == "Abrigos":
+        print("El precio Unitario del producto es ", precioAbrigos)
+        print("El monto total de la compra es de ", factSinDescuento)
+        print("El descuento aplicado a la compra es de 50%, para un monto total de descuento de ", descuentoParaAplicar)
+        print("El monto total con descuento es de ", factSinImpuesto)
+        print("El impuesto aplicado al producto pertenece a un 13%, para un total de", ivaFactInc, "de impuestos")
+        print("El precio total de su compra es de", precioFinal, "colones")
+        
+    comando = input("Desea realizar otra compra? Si desea realziar otra compra digite 'S', de lo contrario Dígite 'N': ")
+    if comando == "N":
+        print("Gracias por comprar en Tiendas VIntage")
+        break
