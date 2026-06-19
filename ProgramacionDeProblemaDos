@@ -1,0 +1,39 @@
+print("Bienveindo al sistema de conversion de modenas")
+valorDolar = float("Ingrese el valor de dolar del dia de hoy: "))
+valorEuro =  float(input("Ingrese el valor del Euro del dia de hoy: "))
+contadorConversiones = int(input("Ingrese cuantas conversiones desea realizar, debe ser un valor numerico: "))
+
+contador = 0
+
+while contador > contadorConversiones:
+     conversionParaRealizar = input("Ingrese el número del tipo de conversión que desea realizar: 1.COL-USD / 2.COL-EUR / 3.USD-COL / 4.EUR-COL y guardar en variable ")
+     
+     if conversionParaRealizar == 1:
+         colonesDolares = float(input("Ingrese la cantidad de colones a convertir a Dolares: "))
+         cambioColDol = colonesDolares * valorDolar
+         print("El valor del Dolar el dia de hoy es de ", valorDolar, "colones")
+         print("La cantidad de colones a cambiar fue de ", colonesDolares, "colones")
+         print("El monto en dolares de la conversion seria de ", cambioColDol, "dolares")
+    elif conversionParaRealizar == 2:
+        dolaresColones = float(input("Ingrese la cantidad de dolares a convertir a colones: "))
+        cambioDolCol = dolaresColones / valorDolar
+        print("El valor del Dolar el dia de hoy fue de ", valorDolar, "colones")
+        print("La cantidad de Dolares a cambiar fue de ", dolaresColones, "Dolares")
+        print("El monto en colones de la conversion seria de ", cambioDolCol, "Colones")
+    elif conversionParaRealizar == 3:
+        colonesEuros = float(Input("inIngrese la cantidad de colones a convertir a Euros: "))
+        cambioColEur = colonesEuros * valorEuro
+        print("El valor del Euro del dia de hoy fue de ", valorEuro, "Euros")
+        print("La cantidad de Colones a cambiar fue de ", colonesEuros, "Colones")
+        print("El monto en Euros de la conversion seria de ", cambioColEur, "Euros")
+    elif conversionParaRealizar == 4:
+        eurosColones = float(input("Ingrese la cantidad de Euros a convertir a colones"))
+        cambioEurCol = eurosColones / valorEuro
+        print("El valor del Euro el dia de hoy fue de ", valorEuro, "Euros")
+        print("La cantidad de Euros a cambiar fue de ", eurosColones, "Euros")
+        print("El monto en colones de la conversion seria de ", cambioEurCol, "Euros")
+    
+    contadorConversiones = +1
+    
+    if contadorConversiones == contador:
+        print("Gracias por usar el Sistema de la casa de cambio, tenga un excelente dia")
