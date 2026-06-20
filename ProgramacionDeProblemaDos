@@ -35,5 +35,5 @@ while contador > contadorConversiones:
     
     contadorConversiones = +1
     
-    if contadorConversiones == contador:
+    if contador == contadorConversiones:
         print("Gracias por usar el Sistema de la casa de cambio, tenga un excelente dia")
